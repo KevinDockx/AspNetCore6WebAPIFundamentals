@@ -33,7 +33,7 @@ namespace CityInfo.API.Controllers
         {
             if (pageSize > maxCitiesPageSize)
             {
-                pageNumber = maxCitiesPageSize;
+                pageSize = maxCitiesPageSize;
             }
 
             var (cityEntities, paginationMetadata) = await _cityInfoRepository
